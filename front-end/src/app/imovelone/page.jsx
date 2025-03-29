@@ -7,7 +7,7 @@ export default function imovelOne() {
         <div>
             <NavbarDois></NavbarDois>
             <div className="bg-[url('/images/imovelone.png')] bg-cover bg-center flex h-screen justify-center items-center">
-                <Card id_imovel="31686" />
+                <Card id_imovel="VEM_31686" />
             </div>
         </div>
     )
