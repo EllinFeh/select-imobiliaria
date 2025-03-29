@@ -149,7 +149,7 @@ export default function Home() {
                   <path d="M9.54269 28.0232C10.6477 25.16 13.1422 24.2732 18.2968 24.2732C23.4958 24.2732 25.9886 25.1099 27.0791 28.0232" stroke="black" strokeLinecap="round" strokeWidth="3" />
                 </svg>
                 <p className="font-bold">- Carlos M.</p>
-                <p className="m-3 text-sm text-center text-gray-600">"Fui muito bem atendido, entenderam exatamente o que eu precisava. Hoje estou no meu cantinho dos sonhos!"</p>
+                <p className="m-3 text-sm text-center text-gray-600">&quot;Fui muito bem atendido, entenderam exatamente o que eu precisava. Hoje estou no meu cantinho dos sonhos!&quot;</p>
               </div>
               <div className="rounded-2xl bg-yellow-300 w-[210px] h-[250px] flex flex-col items-center">
                 <svg className="mt-6" height="37" width="37" fill="none" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +158,7 @@ export default function Home() {
                   <path d="M9.54269 28.0232C10.6477 25.16 13.1422 24.2732 18.2968 24.2732C23.4958 24.2732 25.9886 25.1099 27.0791 28.0232" stroke="black" strokeLinecap="round" strokeWidth="3" />
                 </svg>
                 <p className="font-bold">- Juliana R.</p>
-                <p className="m-3 text-sm text-center text-gray-600">"Achei que ia ser complicado todo o processo, mas foi tudo perfeito e sem dor de cabeça! Sou muito grata a Select."</p>
+                <p className="m-3 text-sm text-center text-gray-600">&quot;Achei que ia ser complicado todo o processo, mas foi tudo perfeito e sem dor de cabeça! Sou muito grata a Select.&quot;</p>
               </div>
             </div>
 
@@ -170,7 +170,7 @@ export default function Home() {
                   <path d="M9.54269 28.0232C10.6477 25.16 13.1422 24.2732 18.2968 24.2732C23.4958 24.2732 25.9886 25.1099 27.0791 28.0232" stroke="black" strokeLinecap="round" strokeWidth="3" />
                 </svg>
                 <p className="font-bold">- André S.</p>
-                <p className="m-3 text-sm text-center text-gray-600">"Eles realmente se importam com a gente, me ajudaram em cada passo até a entrega de chaves."</p>
+                <p className="m-3 text-sm text-center text-gray-600">&quot;Eles realmente se importam com a gente, me ajudaram em cada passo até a entrega de chaves.&quot;</p>
               </div>
               <div className="rounded-2xl bg-yellow-300 w-[210px] h-[250px] flex flex-col items-center">
                 <svg className="mt-6" height="37" width="37" fill="none" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
@@ -179,7 +179,7 @@ export default function Home() {
                   <path d="M9.54269 28.0232C10.6477 25.16 13.1422 24.2732 18.2968 24.2732C23.4958 24.2732 25.9886 25.1099 27.0791 28.0232" stroke="black" strokeLinecap="round" strokeWidth="3" />
                 </svg>
                 <p className="font-bold">- Patricia L.</p>
-                <p className="m-3 text-sm text-center text-gray-600">"Excelente atendimento, me levaram para olhar os imóveis e me acompanharam em todo o processo, só tenho a agradecer."</p>
+                <p className="m-3 text-sm text-center text-gray-600">&quot;Excelente atendimento, me levaram para olhar os imóveis e me acompanharam em todo o processo, só tenho a agradecer.&quot;</p>
               </div>
             </div>
           </div>
