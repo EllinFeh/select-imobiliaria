@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import Card from "@/components/card-colect";
 import Footer from "@/components/footer";
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <Navbar></Navbar>
         <div className="bg-[url('/images/family.png')] bg-cover bg-center min-h-screen sm:min-h-[80vh] :min-h-[80vh] md:min-h-[90vh] max-sm:min-h-[60vh] flex flex-col justify-center px-4 text-white">
           <div className="flex justify-center items-center flex-col gap-6">
-            <img className="w-[130px] h-[165px]" src="./images/selectcreci.png" alt="" />
+            <Image className="w-[130px] h-[165px]" src="./images/selectcreci.png" alt="" />
             <p className="text-3xl leading-tight  text-yellow-300">
               Encontre o <span className="font-bold">Imóvel Ideal</span><br />
               Com quem entende do assunto!
@@ -216,26 +217,26 @@ export default function Home() {
         <div className="flex justify-center items-center max-lg:flex-col text-black text-center gap-4 mb-24">
           {/* IMOVEL UM */}
           <div className="Maria sonia hover:scale-103 duration-300 cursor-pointer w-[349px] bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
-            <img className="max-w-[350px]" src="./images/sonia.png" alt="" />
+            <Image className="max-w-[350px]" src="./images/sonia.png" alt="" />
             <h1 className="font-bold text-2xl mt-4">Maria Sônia</h1>
             <p className="my-4">Renda Familiar à partir de <span className="font-bold">R$1.500</span></p>
-            <img className="w-[200px]" src="./images/subsidios.png" alt="" />
+            <Image className="w-[200px]" src="./images/subsidios.png" alt="" />
             <a href="/imovelone"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
           </div>
           {/* IMOVEL DOIS */}
           <div className="Janga Garden hover:scale-103 duration-300 cursor-pointer w-[349px]  bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
-            <img className="max-w-[350px]" src="./images/janga.png" alt="" />
+            <Image className="max-w-[350px]" src="./images/janga.png" alt="" />
             <h1 className="font-bold text-2xl mt-4">Janga Garden</h1>
             <p className="my-4">Renda Familiar à partir de <span className="font-bold">R$2.500</span></p>
-            <img className="w-[200px]" src="./images/subsidios.png" alt="" />
+            <Image className="w-[200px]" src="./images/subsidios.png" alt="" />
             <a href="/imoveltwo"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
           </div>
           {/* IMOVEL TRES */}
           <div className="Viva vida hover:scale-103 duration-300 cursor-pointer w-[349px]  bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
-            <img className="max-w-[350px]" src="./images/vivavida.png" alt="" />
+            <Image className="max-w-[350px]" src="./images/vivavida.png" alt="" />
             <h1 className="font-bold text-xl mt-4">Viva-Vida Brisas de Igarassu</h1>
             <p className="my-4">Renda Familiar à partir de <span className="font-bold">R$1.800</span></p>
-            <img className="w-[200px]" src="./images/subsidios.png" alt="" />
+            <Image className="w-[200px]" src="./images/subsidios.png" alt="" />
             <a href="/imoveltree"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
           </div>
         </div>

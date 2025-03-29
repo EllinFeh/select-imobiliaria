@@ -1,6 +1,7 @@
 "use client"
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Navbar() {
 
@@ -47,7 +48,7 @@ export default function Navbar() {
                             </div>
                         )}
                     </button>
-                    <img className='m-4' src="./images/selectlogo.png" alt="" />
+                    <Image className='m-4' src="./images/selectlogo.png" alt="" />
                 </div>
 
                 {/* Menu animado */}
@@ -75,7 +76,7 @@ export default function Navbar() {
             <nav className='hidden md:block fixed top-0 left-0 z-50 w-full'>
                 <div className="w-full bg-black h-16 px-4 relative z-50 flex justify-center">
                     <div className='flex w-full justify-between items-center max-w-[1000px]'>
-                        <img className='' src="./images/selectlogo.png" alt="" />
+                        <Image className='' src="./images/selectlogo.png" alt="" />
                         <div className='gap-4 m-4'>
                             <a href="#inicio" className="text-yellow-300 font-semibold text-sm p-3 mr-4 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl">Início</a>
                             <a href="#contato" className="text-yellow-300 font-semibold text-sm p-3 mr-4 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl">Contato</a>
