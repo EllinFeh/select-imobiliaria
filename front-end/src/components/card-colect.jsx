@@ -49,7 +49,7 @@ export default function ContatoForm({ id_imovel }) {
     }
 
     return (
-        <div className='w-[400px] border-yellow-300 rounded-2xl p-6 relative text-yellow-300 border-2 flex justify-center items-center flex-col'>
+        <div className='w-[390px] border-yellow-300 rounded-2xl p-6 relative text-yellow-300 border-2 flex justify-center items-center flex-col'>
 
             <svg className='my-2' height="87" width="87" fill="none" viewBox="0 0 53 57" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23 0.75C16.7891 0.75 11.75 5.78906 11.75 12C11.75 18.2109 16.7891 23.25 23 23.25C29.2109 23.25 34.25 18.2109 34.25 12C34.25 5.78906 29.2109 0.75 23 0.75ZM17.375 27C8.02929 27 0.5 34.5293 0.5 43.875V45.75C0.5 49.9102 3.83984 53.25 8 53.25H30.5V49.5H19.25V34.5H30.5V27.1025C29.8848 27.0293 29.2549 27 28.625 27H17.375ZM34.25 27V38.25H23V45.75H34.25V57H41.75V45.75H53V38.25H41.75V27H34.25Z" fill="#FFDF20" />

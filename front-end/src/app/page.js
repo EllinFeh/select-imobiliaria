@@ -10,7 +10,7 @@ export default function Home() {
         <div className="bg-[url('/images/family.png')] bg-cover bg-center min-h-screen sm:min-h-[80vh] :min-h-[80vh] md:min-h-[90vh] max-sm:min-h-[60vh] flex flex-col justify-center px-4 text-white">
           <div className="flex justify-center items-center flex-col gap-6">
             <img className="w-[130px] h-[165px]" src="./images/selectcreci.png" alt="" />
-            <p className="text-3xl leading-tight  text-yellow-300">
+            <p className="text-2xl leading-tight  text-yellow-300">
               Encontre o <span className="font-bold">Imóvel Ideal</span><br />
               Com quem entende do assunto!
             </p>
@@ -139,9 +139,9 @@ export default function Home() {
       <section id="depoimentos">
         <h1 className="font-bold text-yellow-300 text-3xl text-center mb-12">Depoimentos</h1>
         <section className="text-black flex justify-center mb-24">
-          <div className="central flex max-lg:flex-col gap-4">
-            <div className="onecase flex gap-4">
-              <div className="rounded-2xl bg-yellow-300 w-[210px] h-[250px] flex flex-col items-center">
+          <div className="central flex max-lg:flex-col gap-2">
+            <div className="onecase flex gap-2">
+              <div className="rounded-2xl bg-yellow-300 w-[180px] h-[250px] flex flex-col items-center">
                 <svg className="mt-6" height="37" width="37" fill="none" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
                   <path d="M31.7966 18.2732C31.7966 25.7291 25.7525 31.7732 18.2966 31.7732C10.8408 31.7732 4.7966 25.7291 4.7966 18.2732C4.7966 10.8174 10.8408 4.77319 18.2966 4.77319C25.7525 4.77319 31.7966 10.8174 31.7966 18.2732Z" stroke="black" strokeWidth="3" />
                   <path d="M22.7966 15.2732C22.7966 17.7585 20.782 19.7732 18.2966 19.7732C15.8113 19.7732 13.7966 17.7585 13.7966 15.2732C13.7966 12.7879 15.8113 10.7732 18.2966 10.7732C20.782 10.7732 22.7966 12.7879 22.7966 15.2732Z" stroke="black" strokeWidth="3" />
@@ -150,7 +150,7 @@ export default function Home() {
                 <p className="font-bold">- Carlos M.</p>
                 <p className="m-3 text-sm text-center text-gray-600">&quot;Fui muito bem atendido, entenderam exatamente o que eu precisava. Hoje estou no meu cantinho dos sonhos!&quot;</p>
               </div>
-              <div className="rounded-2xl bg-yellow-300 w-[210px] h-[250px] flex flex-col items-center">
+              <div className="rounded-2xl bg-yellow-300 w-[180px] h-[250px] flex flex-col items-center">
                 <svg className="mt-6" height="37" width="37" fill="none" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
                   <path d="M31.7966 18.2732C31.7966 25.7291 25.7525 31.7732 18.2966 31.7732C10.8408 31.7732 4.7966 25.7291 4.7966 18.2732C4.7966 10.8174 10.8408 4.77319 18.2966 4.77319C25.7525 4.77319 31.7966 10.8174 31.7966 18.2732Z" stroke="black" strokeWidth="3" />
                   <path d="M22.7966 15.2732C22.7966 17.7585 20.782 19.7732 18.2966 19.7732C15.8113 19.7732 13.7966 17.7585 13.7966 15.2732C13.7966 12.7879 15.8113 10.7732 18.2966 10.7732C20.782 10.7732 22.7966 12.7879 22.7966 15.2732Z" stroke="black" strokeWidth="3" />
@@ -161,8 +161,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="twocase flex gap-4">
-              <div className="rounded-2xl bg-yellow-300 w-[210px] h-[250px] flex flex-col items-center">
+            <div className="twocase flex gap-2">
+              <div className="rounded-2xl bg-yellow-300 w-[180px] h-[250px] flex flex-col items-center">
                 <svg className="mt-6" height="37" width="37" fill="none" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
                   <path d="M31.7966 18.2732C31.7966 25.7291 25.7525 31.7732 18.2966 31.7732C10.8408 31.7732 4.7966 25.7291 4.7966 18.2732C4.7966 10.8174 10.8408 4.77319 18.2966 4.77319C25.7525 4.77319 31.7966 10.8174 31.7966 18.2732Z" stroke="black" strokeWidth="3" />
                   <path d="M22.7966 15.2732C22.7966 17.7585 20.782 19.7732 18.2966 19.7732C15.8113 19.7732 13.7966 17.7585 13.7966 15.2732C13.7966 12.7879 15.8113 10.7732 18.2966 10.7732C20.782 10.7732 22.7966 12.7879 22.7966 15.2732Z" stroke="black" strokeWidth="3" />
@@ -171,7 +171,7 @@ export default function Home() {
                 <p className="font-bold">- André S.</p>
                 <p className="m-3 text-sm text-center text-gray-600">&quot;Eles realmente se importam com a gente, me ajudaram em cada passo até a entrega de chaves.&quot;</p>
               </div>
-              <div className="rounded-2xl bg-yellow-300 w-[210px] h-[250px] flex flex-col items-center">
+              <div className="rounded-2xl bg-yellow-300 w-[180px] h-[250px] flex flex-col items-center">
                 <svg className="mt-6" height="37" width="37" fill="none" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
                   <path d="M31.7966 18.2732C31.7966 25.7291 25.7525 31.7732 18.2966 31.7732C10.8408 31.7732 4.7966 25.7291 4.7966 18.2732C4.7966 10.8174 10.8408 4.77319 18.2966 4.77319C25.7525 4.77319 31.7966 10.8174 31.7966 18.2732Z" stroke="black" strokeWidth="3" />
                   <path d="M22.7966 15.2732C22.7966 17.7585 20.782 19.7732 18.2966 19.7732C15.8113 19.7732 13.7966 17.7585 13.7966 15.2732C13.7966 12.7879 15.8113 10.7732 18.2966 10.7732C20.782 10.7732 22.7966 12.7879 22.7966 15.2732Z" stroke="black" strokeWidth="3" />
@@ -251,7 +251,7 @@ export default function Home() {
             <h1 className="font-bold text-yellow-300 text-3xl text-center ">Nossa Localização</h1>
             <p className="m-12 text-center mb-12">Av. Sen. Salgado Filho, s/n - Centro, Paulista - PE, 53401-440 <span className="font-bold">Loja 68 e 69.</span>
             </p>
-            <iframe className="max-sm:w-[460px] w-[800px] h-[560px] max-sm:h-[430px] mb-32" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d870.4543826241195!2d-34.88071877006933!3d-7.939320812101189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1674bfdcd3f9%3A0x69935a31ebe971!2sUNINASSAU%20-%20Paulista!5e1!3m2!1spt-BR!2sbr!4v1743282651492!5m2!1spt-BR!2sbr" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe className="max-sm:w-[300px] w-[800px] h-[560px] max-sm:h-[430px] mb-32" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d870.4543826241195!2d-34.88071877006933!3d-7.939320812101189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1674bfdcd3f9%3A0x69935a31ebe971!2sUNINASSAU%20-%20Paulista!5e1!3m2!1spt-BR!2sbr!4v1743282651492!5m2!1spt-BR!2sbr" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
           </div>
         </div>
