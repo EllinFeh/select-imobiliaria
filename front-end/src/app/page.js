@@ -220,7 +220,7 @@ export default function Home() {
             <h1 className="font-bold text-2xl mt-4">Maria Sônia</h1>
             <p className="my-4">Renda Familiar à partir de <span className="font-bold">R$1.500</span></p>
             <img className="w-[200px]" src="./images/subsidios.png" alt="" />
-            <a href="/imovelone"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
+            <a href="/maria-sonia"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
           </div>
           {/* IMOVEL DOIS */}
           <div className="Janga Garden hover:scale-103 duration-300 cursor-pointer w-[349px]  bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
@@ -228,15 +228,23 @@ export default function Home() {
             <h1 className="font-bold text-2xl mt-4">Janga Garden</h1>
             <p className="my-4">Renda Familiar à partir de <span className="font-bold">R$2.500</span></p>
             <img className="w-[200px]" src="./images/subsidios.png" alt="" />
-            <a href="/imoveltwo"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
+            <a href="/janga-garden"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
           </div>
           {/* IMOVEL TRES */}
-          <div className="Viva vida hover:scale-103 duration-300 cursor-pointer w-[349px]  bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
+          <div className="Viva vida Igarassu hover:scale-103 duration-300 cursor-pointer w-[349px]  bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
             <img className="max-w-[350px]" src="./images/vivavida.png" alt="" />
             <h1 className="font-bold text-xl mt-4">Viva-Vida Brisas de Igarassu</h1>
             <p className="my-4">Renda Familiar à partir de <span className="font-bold">R$1.800</span></p>
             <img className="w-[200px]" src="./images/subsidios.png" alt="" />
-            <a href="/imoveltree"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
+            <a href="/viva-vida-brisas-igarassu"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
+          </div>
+          {/* IMOVEL QUATRO */}
+          <div className="Viva vida Botanico hover:scale-103 duration-300 cursor-pointer w-[349px]  bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
+            <img className="max-w-[350px]" src="./images/vivavidajardim.png" alt="" />
+            <h1 className="font-bold text-xl mt-4">Viva-Vida Jardim Botânico</h1>
+            <p className="my-4">Renda Familiar à partir de <span className="font-bold">R$1.800</span></p>
+            <img className="w-[200px]" src="./images/subsidios.png" alt="" />
+            <a href="/jardim-botanico"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
           </div>
         </div>
       </section>
