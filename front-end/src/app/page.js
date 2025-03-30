@@ -213,7 +213,7 @@ export default function Home() {
       </div>
 
       <section id="imoveis">
-        <div className="flex justify-center items-center max-lg:flex-col text-black text-center gap-4 mb-24">
+        <div className="flex justify-center items-center max-lg:flex-col text-black text-center gap-4">
           {/* IMOVEL UM */}
           <div className="Maria sonia hover:scale-103 duration-300 cursor-pointer w-[349px] bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
             <img className="max-w-[350px]" src="./images/sonia.png" alt="" />
@@ -230,6 +230,8 @@ export default function Home() {
             <img className="w-[200px]" src="./images/subsidios.png" alt="" />
             <a href="/janga-garden"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
           </div>
+        </div>
+        <div className="flex justify-center items-center max-lg:flex-col text-black text-center gap-4 mb-24">
           {/* IMOVEL TRES */}
           <div className="Viva vida Igarassu hover:scale-103 duration-300 cursor-pointer w-[349px]  bg-yellow-300 mb-4 h-[620px] rounded-t-[200px] rounded-b-2xl flex flex-col items-center">
             <img className="max-w-[350px]" src="./images/vivavida.png" alt="" />
@@ -247,6 +249,7 @@ export default function Home() {
             <a href="/jardim-botanico"><button className="font-bold hover:bg-yellow-950 duration-300 cursor-pointer text-yellow-300 bg-black p-3 w-[200px] mt-12 rounded-2xl">Saiba mais!</button></a>
           </div>
         </div>
+
       </section>
 
 
