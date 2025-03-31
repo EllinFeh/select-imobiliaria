@@ -32,7 +32,7 @@ export default function NavbarDois() {
         <div>
             {/* Mobile */}
             <nav className='md:hidden fixed top-0 left-0 z-50 w-full'>
-                <div className="w-full bg-black h-16 flex items-center justify-between px-4 relative z-50">
+                <div className="w-full bg-black h-20 flex items-center justify-between px-4 relative z-50">
                     {/* Botão de abrir/fechar */}
                     <button onClick={toggleMenu} className="focus:outline-non m-4">
                         {!isOpen ? (
@@ -47,7 +47,7 @@ export default function NavbarDois() {
                             </div>
                         )}
                     </button>
-                    <img className='m-4' src="./images/selectlogo.png" alt="" />
+                    <img className='m-4 w-20' src="./images/selectlogo.png" alt="" />
                 </div>
 
                 {/* Menu animado */}
@@ -72,9 +72,9 @@ export default function NavbarDois() {
 
             {/* Desktop */}
             <nav className='hidden md:block fixed top-0 left-0 z-50 w-full'>
-                <div className="w-full bg-black h-16 px-4 relative z-50 flex justify-center">
+                <div className="w-full bg-black h-20 px-4 relative z-50 flex justify-center">
                     <div className='flex w-full items-center max-w-[1000px]'>
-                        <img className='' src="./images/selectlogo.png" alt="" />
+                        <img className='w-20' src="./images/selectlogo.png" alt="" />
                         <div className='gap-4 m-4'>
                             <a href="/" className="text-yellow-300 font-semibold text-sm p-3 ml-12 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl">Início</a>
                             <a target='blank' href="https://instagram.com.br/selectimobiliariaoficial" className="text-yellow-300 font-semibold text-sm p-3 ml-12 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl">Instagram</a>

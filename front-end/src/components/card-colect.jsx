@@ -1,8 +1,12 @@
 'use client'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 
+
 export default function ContatoForm({ id_imovel }) {
+
+    const router = useRouter()
     
     const [formData, setFormData] = useState({
         name: '',
@@ -20,7 +24,7 @@ export default function ContatoForm({ id_imovel }) {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setStatus('loading')
-
+    
         try {
             const response = await fetch('/api/enviar-lead', {
                 method: 'POST',
@@ -34,13 +38,16 @@ export default function ContatoForm({ id_imovel }) {
                     id_imovel
                 })
             })
-
+    
             const data = await response.json()
-
+    
             if (!response.ok || data.error) throw new Error()
-
+    
             setStatus('success')
             setFormData({ name: '', phone: '', resposta: '' }) // reset form
+    
+            // redireciona após o envio bem-sucedido
+            router.push("/thanks-redirect-slck2838slj")
         } catch (error) {
             setStatus('error')
         } finally {
