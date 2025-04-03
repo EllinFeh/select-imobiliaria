@@ -62,9 +62,18 @@ export default function NavbarDois() {
                             className="w-full bg-black text-white flex flex-col items-start px-6 py-4 gap-4 absolute top-16 left-0 z-40"
                         >
                             <a href="/" className="text-yellow-300 font-semibold p-2">Início</a>
-                            <a className='text-yellow-300 font-semibold p-2' target='_blank' href="instagram://user?username=selectimobiliariaoficial"
-                                onclick="setTimeout(() => { window.location = 'https://www.instagram.com/selectimobiliariaoficial'; }, 500);">
-                                Instagram
+                            <a className='text-yellow-300 font-semibold text-sm p-3 ml-12 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl' target='_blank'
+                                href="#" onclick="
+                            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                            if (isMobile) {
+                              window.location = 'instagram://user?username=selectimobiliariaoficial';
+                              setTimeout(() => {
+                                window.location = 'https://www.instagram.com/selectimobiliariaoficial';
+                              }, 500);
+                            } else {
+                              window.location = 'https://www.instagram.com/selectimobiliariaoficial';
+                            }
+                          ">
                             </a>
                             <a href="/" className="text-yellow-300 font-semibold p-2">Sobre Nós</a>
 
@@ -80,8 +89,20 @@ export default function NavbarDois() {
                         <img className='w-20' src="./images/selectlogo.png" alt="" />
                         <div className='gap-4 m-4'>
                             <a href="/" className="text-yellow-300 font-semibold text-sm p-3 ml-12 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl">Início</a>
-                            <a className='text-yellow-300 font-semibold p-2' target='_blank' href="instagram://user?username=selectimobiliariaoficial"
-                                onclick="setTimeout(() => { window.location = 'https://www.instagram.com/selectimobiliariaoficial'; }, 500);">
+
+                            <a className='text-yellow-300 font-semibold text-sm p-3 ml-12 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl' target='_blank'
+                                href="#"
+                                onclick="
+                    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                    if (isMobile) {
+                      window.location = 'instagram://user?username=selectimobiliariaoficial';
+                      setTimeout(() => {
+                        window.location = 'https://www.instagram.com/selectimobiliariaoficial';
+                      }, 500);
+                    } else {
+                      window.location = 'https://www.instagram.com/selectimobiliariaoficial';
+                    }
+                  ">
                                 Instagram
                             </a>
                             <a href="/" className="text-yellow-300 font-semibold text-sm p-3 ml-12 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl">Sobre Nós</a>
@@ -90,6 +111,6 @@ export default function NavbarDois() {
                     </div>
                 </div>
             </nav>
-        </div>
+        </div >
     )
 }
