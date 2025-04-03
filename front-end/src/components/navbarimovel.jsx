@@ -32,7 +32,7 @@ export default function NavbarDois() {
         <div>
             {/* Mobile */}
             <nav className='md:hidden fixed top-0 left-0 z-50 w-full'>
-                <div className="w-full bg-black h-20 flex items-center justify-between px-4 relative z-50">
+                <div className="w-full bg-black h-16 flex items-center justify-between px-4 relative z-50">
                     {/* Botão de abrir/fechar */}
                     <button onClick={toggleMenu} className="focus:outline-non m-4">
                         {!isOpen ? (
