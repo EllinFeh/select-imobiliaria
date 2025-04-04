@@ -191,7 +191,7 @@ export default function Home() {
           <p className="font-bold text-white text-center mx-4">Acompanhe nossos imóveis e novidades no Instagram.
             Vem conhecer seu futuro lar por lá também!</p>
 
-          <a target="_blank" href="https://www.instagram.com/selectimobiliariaoficial">
+          <a target="_blank" href="https://www.instagram.com/selectimobiliariaoficial?r=nametag">
             <svg className="mt-12 mb-24 hover:scale-105 duration-300 cursor-pointer" height="50" width="300" fill="none" viewBox="0 0 207 36" xmlns="http://www.w3.org/2000/svg">
               <rect height="36" width="207" fill="#FFDF20" rx="15" />
               <path d="M55.5 23.2273C58.6631 23.2273 61.2273 20.6631 61.2273 17.5C61.2273 14.3369 58.6631 11.7727 55.5 11.7727C52.3369 11.7727 49.7727 14.3369 49.7727 17.5C49.7727 20.6631 52.3369 23.2273 55.5 23.2273ZM55.5 21.3182C57.6087 21.3182 59.3182 19.6087 59.3182 17.5C59.3182 15.3913 57.6087 13.6818 55.5 13.6818C53.3913 13.6818 51.6818 15.3913 51.6818 17.5C51.6818 19.6087 53.3913 21.3182 55.5 21.3182Z" fill="#0F0F0F" fillRule="evenodd" />
