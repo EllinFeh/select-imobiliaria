@@ -1,33 +1,27 @@
 // components/MetaPixel.js
 import Script from "next/script";
+import { useEffect, useState } from "react";
 
 const META_PIXEL_ID = "1192885255702219";
 
 export default function MetaPixel() {
+  const [pixelLoaded, setPixelLoaded] = useState(false);
+
+  useEffect(() => {
+    if (pixelLoaded && typeof window.fbq !== "undefined") {
+      // Inicializa e envia eventos apenas após o script carregar
+      window.fbq("init", META_PIXEL_ID);
+      window.fbq("track", "PageView");
+      window.fbq("track", "Lead");
+    }
+  }, [pixelLoaded]);
+
   return (
     <>
       <Script
-        id="meta-pixel"
+        id="fb-pixel"
         strategy="afterInteractive"
-        onLoad={() => {
-          if (!window.fbq) {
-            window.fbq = function () {
-              window.fbq.callMethod
-                ? window.fbq.callMethod.apply(window.fbq, arguments)
-                : window.fbq.queue.push(arguments);
-            };
-            if (!window._fbq) window._fbq = window.fbq;
-            window.fbq.push = window.fbq;
-            window.fbq.loaded = true;
-            window.fbq.version = "2.0";
-            window.fbq.queue = [];
-          }
-
-          // Inicializa o Pixel e envia os eventos
-          window.fbq("init", META_PIXEL_ID);
-          window.fbq("track", "PageView");
-          window.fbq("track", "Lead"); // ← evento de lead adicionado
-        }}
+        onLoad={() => setPixelLoaded(true)}
         dangerouslySetInnerHTML={{
           __html: `
             !function(f,b,e,v,n,t,s)
