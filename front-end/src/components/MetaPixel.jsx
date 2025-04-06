@@ -1,27 +1,15 @@
 // components/MetaPixel.js
 import Script from "next/script";
-import { useEffect, useState } from "react";
 
 const META_PIXEL_ID = "1192885255702219";
 
 export default function MetaPixel() {
-  const [pixelLoaded, setPixelLoaded] = useState(false);
-
-  useEffect(() => {
-    if (pixelLoaded && typeof window.fbq !== "undefined") {
-      // Inicializa e envia eventos apenas após o script carregar
-      window.fbq("init", META_PIXEL_ID);
-      window.fbq("track", "PageView");
-      window.fbq("track", "Lead");
-    }
-  }, [pixelLoaded]);
-
   return (
     <>
+      {/* Script do Pixel */}
       <Script
-        id="fb-pixel"
+        id="facebook-pixel-script"
         strategy="afterInteractive"
-        onLoad={() => setPixelLoaded(true)}
         dangerouslySetInnerHTML={{
           __html: `
             !function(f,b,e,v,n,t,s)
@@ -37,12 +25,26 @@ export default function MetaPixel() {
         }}
       />
 
+      {/* Evento após script estar carregado */}
+      <Script
+        id="facebook-pixel-events"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.fbq && fbq('init', '${META_PIXEL_ID}');
+            window.fbq && fbq('track', 'PageView');
+            window.fbq && fbq('track', 'Lead');
+          `,
+        }}
+      />
+
+      {/* Fallback para navegadores sem JS */}
       <noscript>
         <img
           height="1"
           width="1"
           style={{ display: "none" }}
-          src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+          src="https://www.facebook.com/tr?id=1192885255702219&ev=PageView&noscript=1"
         />
       </noscript>
     </>
