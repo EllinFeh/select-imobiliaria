@@ -1,14 +1,13 @@
-// components/MetaPixel.js
+// components/MetaPixelView.js
 import Script from "next/script";
 
 const META_PIXEL_ID = "1192885255702219";
 
-export default function MetaPixel() {
+export default function MetaPixelView() {
   return (
     <>
-      {/* Script do Pixel */}
       <Script
-        id="facebook-pixel-script"
+        id="facebook-pixel-base"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -25,26 +24,23 @@ export default function MetaPixel() {
         }}
       />
 
-      {/* Evento após script estar carregado */}
       <Script
-        id="facebook-pixel-events"
+        id="facebook-pixel-pageview"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.fbq && fbq('init', '${META_PIXEL_ID}');
             window.fbq && fbq('track', 'PageView');
-            window.fbq && fbq('track', 'Lead');
           `,
         }}
       />
 
-      {/* Fallback para navegadores sem JS */}
       <noscript>
         <img
           height="1"
           width="1"
           style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=1192885255702219&ev=PageView&noscript=1"
+          src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
         />
       </noscript>
     </>

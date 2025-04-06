@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import MetaPixel from "@/components/MetaPixel";
+import MetaPixelLead from "@/components/LeadThanks";
 
 export default function Obrigado() {
     const router = useRouter();
@@ -64,7 +64,7 @@ export default function Obrigado() {
                 </div>
                 <p className="text-sm text-gray-400 mt-4">Redirecionando em segundos...</p>
             </div>
-            <MetaPixel></MetaPixel>
+            <MetaPixelLead></MetaPixelLead>
         </div>
     );
 }
