@@ -11,7 +11,7 @@ export default function Obrigado() {
     useEffect(() => {
         const timer = setTimeout(() => {
             router.push("/");
-        }, 4500);
+        }, 8000);
         return () => clearTimeout(timer);
     }, [router]);
 
