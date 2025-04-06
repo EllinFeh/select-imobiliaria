@@ -63,8 +63,7 @@ export default function NavbarDois() {
                         >
                             <a href="/" className="text-yellow-300 font-semibold p-2">Início</a>
                             <a className='text-yellow-300 font-semibold text-sm p-3 ml-12 hover:text-yellow-600 hover:bg-amber-300 duration-300 rounded-2xl' target='_blank'
-                                href="https://www.instagram.com/selectimobiliariaoficial?r=nametag">
-                                Instagram
+                                href="https://www.instagram.com/selectimobiliariaoficial?r=nametag">Instagram
                             </a>
                             <a href="/" className="text-yellow-300 font-semibold p-2">Sobre Nós</a>
 
